@@ -42,7 +42,7 @@ if True:             # comment out or delete this line if this is used as a func
 			    mc.file(rename = pathname + '/' + filename + '.obj')
 			    mc.file(es = True, ch = False, chn = False, con = False, exp = False, sh = False, typ = 'OBJexport')
 			    print('Successfully exported: ' + filename + '.obj')
-			    cmdstr = '/grp5/anim-rgs/opt/hfs.current/bin/gwavefront ' + pathname + '/' + filename + '.obj' + ' ' + pathname + '/' + filename + '.bgeo'
+			    cmdstr = '/opt/hfs.current/bin/gwavefront ' + pathname + '/' + filename + '.obj' + ' ' + pathname + '/' + filename + '.bgeo'
 			    print('Converting .obj to .bgeo file...', end='')
 			    sp.Popen(cmdstr, shell=True)
 			    os.wait()
